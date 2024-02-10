@@ -5,8 +5,12 @@ import './App.css'
 function App() {
   return (
     <Router>
-      <div>
+      <div className='app'>
         <nav>
+          <div className='title'>
+            <img src="public/logo.png" alt="logo dashboarding data football" width="60px" height="60px"/>
+            <h2>Dashboard Data Football</h2>
+          </div>
           <ul>
             <li>
               <Link to="/">Accueil</Link>

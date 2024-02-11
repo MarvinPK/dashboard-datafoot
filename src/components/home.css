@@ -2,7 +2,7 @@
     height: calc(100vh);
     display: flex;
     justify-content: center;
-    background-image: url("../public/background-img.jpg");
+    background-image: url("background-img.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -23,8 +23,22 @@ article{
 .card{
     width: 250px;
     height: 350px;
-    border: var(--color-red) 1px solid;
+    border: black 1px solid;
     border-radius: 20px;    
+}
+
+.title-card{
+    display: none;
+}
+
+.card.championnat{
+    background-image: url("championnats.png");
+}
+
+.cover-card{   
+  background-color: rgba(173, 173, 173, 0.4);
+  height: 100%;
+  border-radius: 20px;  
 }
 
 nav ul {
@@ -32,6 +46,32 @@ nav ul {
 }
 
 .card:hover{
+    
     margin-bottom: 1%;
+    transition: 0.5s;
     box-shadow: 15px 15px 30px rgba(25, 25, 25), -15px -15px 30px rgba(60, 60, 60);
+    
+    .cover-card{
+        transition: 0.5s;
+        background-color: rgba(173, 173, 173, 0.8);
+    }
+    
+    .title-card{
+        display: flex;
+        position: relative;
+        top: 150px;
+        left: 10px;
+        transform: rotate(55deg);
+        color: black;
+        font-size: 30px;
+        font-weight: 700;
+        
+    }
+
+    @media screen and (max-width: 1400px) {
+        #home{
+            background-image: none;
+        }
+        
+    }
 }

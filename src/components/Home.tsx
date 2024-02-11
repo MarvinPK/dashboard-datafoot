@@ -7,14 +7,16 @@ export const Home = () => {
                 <Navigation/> 
                 <article>                 
                     <main className="all-cards">
-                        <div className="card">
-                            <div className="title">Championnats</div>
+                        <div className="card championnat">
+                            <div className='cover-card'>
+                            <div className="title-card">CHAMPIONNATS</div>
+                            </div>
                         </div>
                         <div className="card">
-                            <div className="title">Equipes</div>
+                            <div className="title-card">Equipes</div>
                         </div>
                         <div className="card">
-                            <div className="title">Joueurs</div>
+                            <div className="title-card">Joueurs</div>
                         </div>             
                     </main>      
                 </article>      

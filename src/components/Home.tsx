@@ -1,18 +1,24 @@
+import { Navigation } from './Navigation'
 import './home.css'
 export const Home = () => {
     return (
-        <div id="home">
-            <main className="all-cards">
-                <div className="card">
-                    <div className="title">Championnats</div>
-                </div>
-                <div className="card">
-                    <div className="title">Equipes</div>
-                </div>
-                <div className="card">
-                    <div className="title">Joueurs</div>
-                </div>             
-            </main>            
+        <div id="home">  
+            <div className='cover-background'>
+                <Navigation/> 
+                <article>                 
+                    <main className="all-cards">
+                        <div className="card">
+                            <div className="title">Championnats</div>
+                        </div>
+                        <div className="card">
+                            <div className="title">Equipes</div>
+                        </div>
+                        <div className="card">
+                            <div className="title">Joueurs</div>
+                        </div>             
+                    </main>      
+                </article>      
+            </div>
         </div>
     )
   }

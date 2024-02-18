@@ -2,7 +2,6 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Home from './components/Home';
 import { Navigation } from './components/Navigation';
 import './App.css'
-import Page from './components/hoc/Page';
 import Equipes from './components/equipe/Equipes';
 
 function App() {

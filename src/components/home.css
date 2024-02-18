@@ -1,11 +1,16 @@
 #home{
     height: calc(100vh);
     display: flex;
-    justify-content: center;
     background-image: url("background-img.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    justify-content: center;
 }
+
+.cover-background{
+    background-color: rgba(36, 36, 36, 0.5);
+    width: 100%;
+  }
 
 article{
     display: flex;
@@ -19,6 +24,18 @@ article{
     align-items: center;
     gap: 100px;
 
+    a:link { 
+        text-decoration: none; 
+    } 
+    a:visited { 
+        text-decoration: none; 
+    } 
+    a:hover { 
+        text-decoration: none; 
+    } 
+    a:active { 
+        text-decoration: none; 
+    }
 }
 .card{
     width: 250px;
@@ -27,21 +44,20 @@ article{
     border-radius: 20px;    
 }
 
-.title-card{
-    display: none;
-}
-
 .card.championnat{
     background-image: url("championnats.png");
 }
+.card.equipe{
+    background-image: url("equipes.png");
+}
 
 .cover-card{   
-  background-color: rgba(173, 173, 173, 0.4);
+  background-color: rgba(173, 173, 173, 0.1);
   height: 100%;
   border-radius: 20px;  
 }
 
-nav ul {
+.navigation ul {
     display: none;
 }
 

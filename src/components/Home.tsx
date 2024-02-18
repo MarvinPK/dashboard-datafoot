@@ -1,23 +1,19 @@
-import { Navigation } from './Navigation'
 import './home.css'
 export const Home = () => {
     return (
         <div id="home">  
             <div className='cover-background'>
-                <Navigation/> 
                 <article>                 
                     <main className="all-cards">
-                        <div className="card championnat">
-                            <div className='cover-card'>
-                            <div className="title-card">CHAMPIONNATS</div>
-                            </div>
-                        </div>
-                        <div className="card">
-                            <div className="title-card">Equipes</div>
-                        </div>
-                        <div className="card">
-                            <div className="title-card">Joueurs</div>
-                        </div>             
+                        <a href={`/championnats`}>
+                            <div className="card championnat"/>
+                        </a>
+                        <a href={`/equipes`}>
+                            <div className="card equipe"/>
+                        </a>
+                        <a href={`/joueurs`}>
+                            <div className="card"/>  
+                        </a>           
                     </main>      
                 </article>      
             </div>

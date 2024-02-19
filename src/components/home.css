@@ -1,7 +1,7 @@
 #home{
     height: calc(100vh);
     display: flex;
-    background-image: url("background-img.jpg");
+    background-image: url("/background-img.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     justify-content: center;
@@ -45,10 +45,10 @@ article{
 }
 
 .card.championnat{
-    background-image: url("championnats.png");
+    background-image: url("/championnats.png");
 }
 .card.equipe{
-    background-image: url("equipes.png");
+    background-image: url("/equipes.png");
 }
 
 .cover-card{   
